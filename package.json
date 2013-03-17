@@ -1,0 +1,16 @@
+{
+  "name": "spinup-rebuild",
+  "version": "1.0.0",
+  "description": "Rebuild binary dependecies when starting your app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
