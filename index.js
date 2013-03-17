@@ -1,16 +1,6 @@
 var spawn = require('child_process').spawn
-module.exports = function (opts, cb) {
-  if (!cb) {
-    cb = opts
-    opts = {
-      logOutput: true
-    }
-  }
-  var child = spawn('npm', ['rebuild'])
-  if (opts && opts.logOutput) {
-    child.stdout.pipe(process.stdout)
-    child.stderr.pipe(process.stdout)
-  }
+module.exports = function (cb) {
+  var child = spawn('npm', ['rebuild'], { stdio: 'inherit' })
   child.on('exit', function (code) {
     if (code !== 0) {
       return cb({

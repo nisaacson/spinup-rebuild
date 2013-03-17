@@ -12,5 +12,11 @@
   "repository": "",
   "author": "",
   "license": "BSD",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "eyespect": "~0.1.8",
+    "should": "~1.2.2",
+    "mocha": "~1.8.2",
+    "memwatch": "~0.2.2"
+  }
 }
